@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SaxParserHandler extends DefaultHandler {
-    public List<Person> list = new ArrayList<>();
+    public List<Person> list = null;
     Person person = null;
     String value = "";
 
@@ -17,6 +17,7 @@ public class SaxParserHandler extends DefaultHandler {
     @Override
     public void startDocument() throws SAXException {
         super.startDocument();
+        list = new ArrayList<>();
         System.out.println("解析开始");
     }
 
