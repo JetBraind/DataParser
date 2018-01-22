@@ -35,7 +35,7 @@ public class DomHandler {
             NamedNodeMap attrs = person.getAttributes();
             for (int j = 0; j < attrs.getLength(); j++) {
                 Node attr = attrs.item(j);
-                //判断标签是否存为空
+                //判断属性是否存为空
                 if (attr != null) {
                     p.setId(Integer.parseInt(attr.getNodeValue()));
                 }

@@ -16,6 +16,7 @@ import java.util.List;
 public class SaxTest {
     @Test
     public void test() throws ParserConfigurationException, SAXException, IOException {
+        long start = System.currentTimeMillis();
         //获取sax解析工厂
         SAXParserFactory factory = SAXParserFactory.newInstance();
         //通过工厂获取SaxParser实例
@@ -26,5 +27,6 @@ public class SaxTest {
         parser.parse(file, handler);
         List<Person> list = handler.list;
         System.out.println(list.toString());
+        System.out.println(System.currentTimeMillis() - start);
     }
 }

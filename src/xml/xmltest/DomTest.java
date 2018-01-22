@@ -13,8 +13,10 @@ public class DomTest {
     @Test
     public void test01() {
         try {
+            long start = System.currentTimeMillis();
             List<Person> list = DomHandler.getParserList();
             System.out.println(list.toString());
+            System.out.println(System.currentTimeMillis() - start);
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (IOException e) {

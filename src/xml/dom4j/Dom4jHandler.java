@@ -10,11 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dom4jHandler {
-    @Test
-    public void test01() throws DocumentException {
-        List<Person> list = getList();
-        System.out.println(list.toString());
-    }
 
     public static List<Person> getList() throws DocumentException {
         List<Person> list = new ArrayList<>();
