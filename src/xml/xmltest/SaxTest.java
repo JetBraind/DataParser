@@ -1,4 +1,4 @@
-package xml.saxtest;
+package xml.xmltest;
 
 import org.junit.Test;
 import org.xml.sax.SAXException;
